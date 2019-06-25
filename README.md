@@ -1,4 +1,4 @@
-# Searching Large File Contents & Long-Polling (ASP.NET Core & React)
+# Searching Large File Contents & Long-Polling
 Search contents of very long files with long-polling, using ASP.NET Core 2.1 and React. This was an assignment for a job application in a full-stack role.
 
 ## General description:
