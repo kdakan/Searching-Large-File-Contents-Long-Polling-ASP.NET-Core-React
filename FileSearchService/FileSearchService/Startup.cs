@@ -37,8 +37,6 @@ namespace FileSearchService
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            //app.UseCors(builder =>
-            //    builder.WithOrigins("http://localhost:3000"));
             app.UseCors(options => options.AllowAnyOrigin());
 
             if (env.IsDevelopment())
@@ -51,12 +49,6 @@ namespace FileSearchService
             }
 
             app.UseHttpsRedirection();
-            //app.UseCors(options => options.AllowAnyOrigin());
-            //app.UseCors(builder => builder
-            //   .AllowAnyOrigin()
-            //   .AllowAnyMethod()
-            //   .AllowAnyHeader()
-            //   .AllowCredentials());
             app.UseMvc();
         }
     }
